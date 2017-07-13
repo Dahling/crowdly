@@ -40,7 +40,14 @@
         <br>
         <textarea #newAmount></textarea>
       </div>
-      <button (click)="submitForm(newName.value, newManager.value, newType.value, newDescription.value, newAmount.value); newName.value=''; newManager.value=''; newType.value=''; newDescription.value=''; newAmount.value='';">Add</button>
+
+      <div>
+        <label>Image URL:</label>
+        <br>
+        <textarea #newUrl></textarea>
+      </div>
+
+      <button (click)="submitForm(newName.value, newManager.value, newType.value, newDescription.value, newAmount.value, newUrl.value); newName.value=''; newManager.value=''; newType.value=''; newDescription.value=''; newAmount.value=''; newUrl.value='';">Add</button>
     </div>
   </div>
 </div>
