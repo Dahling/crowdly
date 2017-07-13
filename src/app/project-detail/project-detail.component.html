@@ -3,5 +3,5 @@
   <h4>{{(projectToDisplay | async)?.manager}}</h4>
   <p>{{(projectToDisplay | async)?.type}}</p>
   <p>{{(projectToDisplay | async)?.description}}</p>
-  <p>{{(projectToDisplay | async)?.amount}}</p>
+  <p>${{(projectToDisplay | async)?.amount}}.00</p>
 </div>
