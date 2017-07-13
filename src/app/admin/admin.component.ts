@@ -16,8 +16,8 @@ export class AdminComponent {
   // ngOnInit() {
   // }
 
-  submitForm(name: string, manager: string, type: string, description: string, amount: number) {
-    var newProject: Project = new Project(name, manager, type, description, amount);
+  submitForm(name: string, manager: string, type: string, description: string, amount: number, url: string) {
+    var newProject: Project = new Project(name, manager, type, description, amount, url);
     this.projectService.addProject(newProject);
   }
 
